@@ -33,10 +33,14 @@ Silakan fork repository ini dan submit link repository hasil pengerjaan Anda ke 
 
 ## How to run this project
 
-1. Run Migration
+1. Create Database & Run Migration
 
 ```
-sequelize db:migrate
+npx sequelize db:create
+```
+
+```
+npx sequelize db:migrate
 ```
 
 2. Register Default User and Admin
@@ -46,7 +50,7 @@ sequelize db:migrate
 4. Run Seeder for Permissions
 
 ```
-sequelize db:seed:all
+npx sequelize db:seed:all
 ```
 
 5. Run Project
@@ -56,4 +60,4 @@ npm run start
 ```
 
 6. Test the API
-   To test the API you can import the Test-backend-sesasi.postman_collection.json to the Postman, so you can check the full documentation
+   To test the API you can import the Test Sagara.postman_collection.json to the Postman, so you can check the full documentation
